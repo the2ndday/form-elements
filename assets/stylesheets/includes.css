@@ -1,0 +1,11 @@
+@import 'reset.css';
+@import 'forms.css';
+
+html{
+    color: #686c73;
+    font-size: 10px;
+    font-family: "GT America", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
