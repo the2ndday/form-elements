@@ -4,7 +4,38 @@
     <script src='http://127.0.0.1:9001/js/socket.js'></script>
   </head>
   <body>
-    <h1>Form elements</h1>
-    <input type="text">
+    <form>
+      <fieldset>
+        <legend>Text input</legend>
+        <div class="input-group">
+          <label for="">Name</label>
+          <input type="text" placeholder="Type placeholder">
+        </div>
+
+        <div class="input-group">
+          <label for="">Disabled input</label>
+          <input type="text" placeholder="Type placeholder" disabled>
+        </div>
+
+        <div class="input-group">
+          <label for="">Helper text</label>
+          <input type="text" placeholder="Type placeholder">
+          <p class="input-helper">Feel free to ignore me.</p>
+        </div>
+
+        <div class="input-group has-error">
+          <label for="">Error</label>
+          <input type="text" placeholder="Type placeholder" invalid>
+          <p class="input-helper input-helper--error">Don't ignore me.</p>
+        </div>
+
+        <div class="input-group has-success">
+          <label for="">Success</label>
+          <input type="text" placeholder="Type placeholder" invalid>
+          <p class="input-helper input-helper--success">You didn't ignore me!</p>
+        </div>
+      </fieldset>
+    </form>
+
   </body>
 </html>

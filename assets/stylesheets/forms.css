@@ -1,2 +1,72 @@
+fieldset legend{
+  font-weight: bold;
+  color: #30363d;
+  font-size: 1.8rem;
+  margin-bottom: 2.4rem;
+}
 
+.input-group{
+  margin-bottom: 2.4rem;
+}
 
+label{
+  color: #30363d;
+  font-size: 14px;
+  line-height: 2rem;
+
+  display: block;
+  margin-bottom: .8rem;
+}
+
+input[type=text]{
+  font-family: "GT America", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #30363d;
+
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  border: 1px solid #c2c6cc;
+  border-radius: 0;
+  background-color: #ffffff;
+  padding: 1.1rem 1.6rem;
+  display: block;
+  width: 100%;
+  max-width: 40rem;
+  outline:none;
+}
+  input[type=text]:hover{
+    border-color: #686C73;
+  }
+  input[type=text]:focus{
+    border-color: #2179EE;
+    outline: 6px solid rgba(33, 121, 238, .15);
+  }
+  input[type=text]:disabled{
+    background-color: #F3F4F8;
+    color: #9EA2A8;
+    pointer-events: none;
+  }
+
+  /* helper */
+  .input-helper{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    margin-top: .8rem;
+  }
+
+  /* error */
+  .has-error input[type=text]{
+    border-color: #FF6759;
+  }
+    .has-error input[type=text]:focus{
+      outline: 6px solid rgba(255, 103, 89, .15);
+    }
+  .has-error .input-helper--error{
+    color: #FF6759;
+  }
+
+  /* success */
+  .has-success input[type=text]{
+  }
+  .has-success .input-helper--success{
+    color: #00CC9A;
+  }
